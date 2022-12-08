@@ -1,0 +1,304 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    background-color: white;
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(20, 20, 20);
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    border: 2px solid rgb(20, 20, 20);
+    background-color: rgb(78, 78, 78);
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(230, 78, 72);
+}
+
+.nav{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    background-color: rgb(20, 20, 20);
+    z-index: 999;
+}
+.link{
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    margin: 0px 0px 0px 50px;
+}
+.link a{
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 30px 10px;
+    margin: 0px 10px;
+    cursor: pointer;
+    transform: scale(0.95,0.95);
+    transition: ease-in-out 200ms;
+}
+.link a:hover{
+    transform: scale(1,1);
+    color: rgb(230, 78, 72);
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo a{
+    display: block;
+    padding: 0px;
+    margin: 0px;
+}
+.logo img{
+    display: block;
+    width: 50px;
+}
+.nav .line{
+    display: block;
+    align-self: center;
+    height: 50px;
+    width: 2px;
+    margin: 0px 0px 0px 15px;
+    background-color: rgb(40, 40, 40);
+}
+.dropdown{
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+.dropctn{
+    display: none;
+    position: fixed;
+    background-color: rgb(20, 20, 20);
+    min-width: 200px;
+    padding: 0px 0px 5px 0px;
+}
+.dropdown a{
+    text-align: center;
+    margin: 0px;
+}
+.dropbtn{
+    display: flex;
+}
+.dropctn a{
+    display: block;
+    text-align: left;
+    padding: 10px;
+    margin: 0px 5px;
+}
+.dropdown:hover .dropctn{
+    display: block;
+}
+.dropdown:hover .dropctn a:hover{
+    color: white;
+    background-color: rgb(40, 40, 40);
+}
+.dropdown:hover .dropbtn{
+    color: rgb(230, 78, 72);
+    transform: scale(1,1);
+}
+.register{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+    margin: 0px 50px 0px 0px;
+}
+.register a{
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px;
+    border-radius: 2px;
+    background-color: rgb(40, 40, 40);
+    transition: ease-in-out 200ms;
+}
+.register a:hover{
+    background-color: rgb(230, 78, 72);
+}
+
+.banner{
+    display: block;
+    background: url("Assets/worlds.jpg") 50% 50% no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.title-maps h1{
+    margin: 0px;
+    padding: 200px 0px 150px 0px;
+    text-align: center;
+    font-family: 'a Atmospheric', Arial, Helvetica, sans-serif;
+    font-size: 4em;
+    text-shadow: 0px 0px 10px black;
+}
+.deco{
+    display: block;
+    margin: 0px 100px;
+    border-bottom: 20px solid white;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    box-sizing: border-box;
+}
+
+.content{
+    display: block;
+}
+.map-contents{
+    padding: 50px 0px 0px 0px;
+    margin: 0px 0px;
+}
+.map-contents img{
+    width: 575px;
+    height: 275px;
+}
+.first-row, .second-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 50px 0px;
+}
+.map-container{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+.map-description h2{
+    margin: -20px 0px 0px 0px;
+    padding: 0px 20px 0px 20px;
+    font-size: 30px;
+    font-family: 'a Atmospheric', Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: rgb(230, 78, 72);
+}
+.map-description p{
+    margin: 0px;
+    padding: 10px;
+    color: white;
+    background-color: rgb(230, 78, 72);
+}
+@media screen and (max-width: 1024px) {
+    .first-row, .second-row{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .map-container{
+        width: 90%;
+    }
+    .map-container:last-of-type{
+        margin: 50px 0px 0px 0px;
+    }
+    .map-contents img{
+        width: 100%;
+        height: 500px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .map-contents img{
+        width: 100%;
+        height: 375px;
+    }
+}
+@media screen and (max-width: 426px) {
+    .nav .line{
+        margin: 0px 0px 0px 5px;
+    }
+    .link{
+        margin: 0px 0px 0px 5px;
+    }
+    .register{
+        margin: 0px 5px 0px 0px;
+    }
+    .link a{
+        font-size: 10px;
+    }
+    .register a{
+        font-size: 10px;
+    }
+    .map-description p br{
+        display: none;
+    }
+    .map-contents img{
+        width: 100%;
+        height: 200px;
+    }
+}
+
+.deco2{
+    display: block;
+    margin: 50px 100px 0px 100px;
+    border-bottom: 20px solid rgb(20, 20, 20);
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    box-sizing: border-box;
+}
+.footer{
+    display: block;
+    background-color: rgb(20, 20, 20);
+}
+.sosmed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px 0px 0px;
+}
+.sosmed a{
+    font-size: 18px;
+}
+.fa{
+    padding: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 10px;
+    border-radius: 50%;
+    transition: ease-in-out 200ms;
+}
+.fa:hover{
+    background: rgb(230, 78, 72);
+}
+.fa-facebook{
+    color: white;
+    background: rgb(40, 40, 40);
+}
+.fa-twitter{
+    color: white;
+    background: rgb(40, 40, 40);
+}
+.fa-instagram{
+    color: white;
+    background: rgb(40, 40, 40);
+}
+.fa-youtube{
+    color: white;
+    background: rgb(40, 40, 40);
+}
+.footer-txt{
+    display: block;
+    text-align: center;
+    padding: 20px 0px;
+}
+.footer-txt p{
+    display: block;
+    font-size: 12px;
+    color: rgb(80, 80, 80);
+}
+
+@media screen and (max-width: 426px) {
+    .footer-txt p{
+        font-size: 8px;
+    }
+}

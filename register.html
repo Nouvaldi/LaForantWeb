@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRE-REGISTER</title>
+    <link rel="stylesheet" href="register.css">
+    <link rel="icon" href="./Assets/logoFix.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="link">
+            <div class="logo">
+                <a href="index.html"><img src="./Assets/logoFix.png" alt=""></a>
+            </div>
+            <div class="line"></div>
+            <a href="index.html">HOME</a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">GAME INFO</a>
+                <div class="dropctn">
+                    <a href="agent.html">AGENTS</a>
+                    <a href="maps.html">MAPS</a>
+                    <a href="specs.html">SPECS</a>
+                </div>
+            </div>
+        </div>
+        <div class="register">
+            <a href="register.html">PRE-REGISTER</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="banner">
+            <h1>PRE-REGISTER</h1>
+            <div class="deco"></div>
+        </div>
+        <div class="form">
+            <div class="form-img2"></div>
+            <form action="index.html" method="post">
+                <h2>PRE-REGISTER NOW <br>to receive a free Agent 'GHOST'</h2>
+                <input type="text" name="name" id="name" placeholder="Name" required>
+                <input type="email" name="email" id="email" placeholder="Email Address" required>
+                <input type="password" name="password" id="password" placeholder="Password" required>
+                <input type="date" name="dob" id="dob" required>
+                <input type="text" name="nation" id="nation" placeholder="Nationality" required>
+                <label>
+                    <input type="checkbox" name="agree" id="agree" required>
+                    <p>I have read and agreed to the Privacy Policy and Terms of Services.</p>
+                </label>
+                <label>
+                    <input type="checkbox" name="news" id="news" required>
+                    <p>I would like to receive updates by email about products and services, news, and invitations to events from RITO Games.</p>
+                </label>
+                <input type="submit" name="submit" id="submit">
+                <div id="error"><div>error goes here</div></div>
+            </form>
+            <div class="form-img">
+                <img src="./Assets/char1A.png" alt="">
+            </div>
+        </div>
+        <div class="deco2"></div>
+    </div>
+
+    <div class="footer">
+        <div class="sosmed">
+            <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/home" target="_blank" class="fa fa-twitter"></a>
+            <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
+            <a href="https://www.youtube.com/" target="_blank" class="fa fa-youtube"></a>
+        </div>
+        <div class="footer-txt">
+            <p>&copy 2021 RITO GAMES, INC. RITO GAMES, LAFORANT, AND ANY ASSOCIATED LOGOS ARE <br>TRADEMARKS, SERVICE MARKS, AND/OR REGISTERED TRADEMARKS OF RITO GAMES, INC</p>
+        </div>
+    </div>
+    
+    <script src="register.js"></script>
+</body>
+</html>
